@@ -27,7 +27,7 @@ const Header = () => {
                         <Nav>
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
                             <Nav.Link as={Link} to="/login">
-                                Dank memes
+                                Login
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
