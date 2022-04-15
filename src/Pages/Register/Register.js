@@ -1,9 +1,8 @@
-import { Button, Form } from 'react-bootstrap';
 import React, { useRef } from 'react';
+import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-
-const Login = () => {
+const Register = () => {
     const emailRef= useRef("");
     const passwordRef= useRef("");
 
@@ -15,7 +14,7 @@ const Login = () => {
     }
     return (
         <div className='w-50 mx-auto' >
-            <h2 className='text-center my-5' >Please Login</h2>
+            <h2 className='text-center my-5' >Please Register</h2>
             <Form onSubmit={handleFormSubmit} >
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -36,9 +35,9 @@ const Login = () => {
                     Submit
                 </Button>
             </Form>
-            <p>Don't have an account? <Link to="/register" >Register</Link> </p>
+            <p>Already have an account? <Link to="/login" >Login</Link> </p>
         </div>
     );
 };
 
-export default Login;
+export default Register;
